@@ -25,7 +25,6 @@ You can run the command "git clone https://github.com/cocoshi98/simplemath.git" 
 
 ---
 
-
 ## **Prerequisites**
 Make sure you have the following installed:
 
@@ -38,26 +37,35 @@ Make sure you have the following installed:
 ---
 
 ## **Backend Setup**
-1. Navigate to the root directory: simplemath
-2. Run the command "mvn spring-boot:run"
-3. The backend should now be running at http://localhost:8080
-4. You can test the API using the following endpoint: "POST http://localhost:8080/api/add?a=5&b=3"
-5. The expected response will be "8"
+1. Navigate to the backend directory: simplemath/backend
+2. Run the command `mvn spring-boot:run`
+3. You can test the API on Postman using:
+    - Method: POST
+    - Endpoint: /api/add
+    - Description: Add two numbers
+    - Example Request: `/api/add?a=5&b=3`
+4. The expected response will be "8"
 
+---
 
 ## **Frontend Setup**
 1. Navigate to the frontend directory: simplemath/frontend
 2. Run the command "npm install" to install dependencies
 3. Run the command "npm start" to start the development server
-4. The frontend should now be running at http://localhost:3000
+
+---
 
 ## **Troubleshooting**
 1. PORT Conflicts
 - If port 8080 is in use, modify application.properties in the backend: server.port=9090
 - If port 3000 is in use, start the frontend with: PORT=3001 npm start
 
+---
+
 ## **License**
 This project is open-source and available under the MIT License.
+
+---
 
 ## **Author**
 - Quah Joon Hui Conant
